@@ -2,6 +2,11 @@ body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0px;
 }
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
 .nav{
     width: 100vw;
     height: 40px;
@@ -26,6 +31,7 @@ body{
 .navbar li{
     margin-left: auto;
     height: 130%;
+    cursor: pointer;
 }
 .apple-nav{
     height: 120%;
@@ -41,14 +47,28 @@ body{
     color: rgb(3, 3, 3);
 }
 .con1{
-    height: 80vh;
-    width: 100vw;
+    height: 100vh;
+    width: 100wh;
     background-color: #f5f5f7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     
+}
+.page1-top{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 60%;
+    width: 100%;
+}
+.page1-bottom{
+    display: flex;
+    flex: 0 1 50%;
+    justify-content: center;
+    height: 40%;
+    width: 100%;
 }
 .logo{
     height: 50px;
@@ -68,19 +88,29 @@ body{
     gap: 10p;
 }
 .series{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 550;
+    margin-top: 0px;
+    margin-left: 25px;
 }
 .classic{
     font-size: 30px;
+    margin-top: 0px;
 }
-.watch{
+.watch-letter{
+ 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.watch-img{
+    height: 100%;
 }
 .button1{
     border-radius: 30px;
@@ -96,7 +126,7 @@ body{
 .button2{
     border-radius: 30px;
     height: 40px;
-    width: 100px;
+    width: 70px;
     color: #0071E3;
     border: solid 1px #0071E3;
     cursor: pointer;
