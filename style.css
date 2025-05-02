@@ -6,7 +6,7 @@ body{
     height: 100vh;
     width: 100vw;
 }
-
+/* ------------------------------------------------------------------------page 1---------------------------------------------------------------------*/
 .nav{
     width: 100vw;
     height: 40px;
@@ -130,4 +130,51 @@ body{
     color: #0071E3;
     border: solid 1px #0071E3;
     cursor: pointer;
+}
+/* ------------------------------------------------------------------------page 2---------------------------------------------------------------------*/
+.con2{
+    height: 95vh;
+    width: 100vw;
+    background-color: black;
+}
+.page2-top{
+    height: 50%;
+    
+}
+.page2-mid{
+    height:40% ;
+    display: flex;
+    justify-content: center;
+    
+}
+.page2-bottom{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.pro-tittle{
+    color: white;
+    font-size: 55px;
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-weight: 650;
+}
+.a1{
+    text-align: center;
+    margin-top: -40px;
+    color: white;
+}
+.a2{
+    width: 70%;
+    height: 70%;
+}
+.intel{
+    font-size: 20px;
+    background: linear-gradient(to right, #1E40C7, #CA2EE6, #FA3319);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
 }
