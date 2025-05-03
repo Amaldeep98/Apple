@@ -16,7 +16,7 @@ body{
     position: fixed;
     top: 0;
     z-index: 1000;
-    opacity: 50%;
+    opacity: 80%;
 }
 .navbar{
     display: flex;
@@ -111,9 +111,24 @@ body{
     justify-content: center;
     align-items: center;
 }
-.watch-img{
+.watch-img-pc{
     height: 100%;
 }
+@media only screen and (max-width: 400px)  {
+    .watch-img-pc{
+        display: none;
+    }
+    .watch-img-mobile{
+        height: 100%;
+        width: 80%;
+    }
+}
+@media only screen and (min-width: 400px)  {
+    .watch-img-mobile{
+        display: none;
+    }
+}
+
 .button1{
     border-radius: 30px;
     height: 46px;
@@ -215,6 +230,13 @@ body{
     height: 130%;
     width: 150%;
     align-content:first baseline;
+}
+@media only screen and (max-width: 400px)  {
+    .b4{
+        height: 100%;
+        width: 150%;
+        align-content:first baseline;
+    } 
 }
 .page3-mid{
     height:40% ;
