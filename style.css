@@ -26,12 +26,14 @@ body{
     align-items: center;
     gap:30px;
     font-size: 13px;
+    transition: 1.2s ease;
     
 }
 .navbar li{
     margin-left: auto;
     height: 130%;
     cursor: pointer;
+    transition: 1.2s ease;
 }
 .apple-nav{
     height: 120%;
@@ -114,16 +116,17 @@ body{
 .watch-img-pc{
     height: 100%;
 }
-@media only screen and (max-width: 400px)  {
+@media only screen and (max-width: 860px)  {
     .watch-img-pc{
         display: none;
     }
     .watch-img-mobile{
         height: 100%;
         width: 80%;
+        object-fit: contain;
     }
 }
-@media only screen and (min-width: 400px)  {
+@media only screen and (min-width: 860px)  {
     .watch-img-mobile{
         display: none;
     }
@@ -265,4 +268,33 @@ body{
     display: flex;
     gap: 50px;
     justify-content: center;
+}
+@media only screen and (min-width:1017px){
+    .menu{
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width:1016px){
+    .menu{
+        background-size: 30px;
+        width: 20x;
+        height: 20px;
+        cursor: pointer;
+        transition: 1.3s ease;
+        margin-top: -5px;
+        transition: 1.2s ease;
+        position: fixed;
+        top:15px;
+        right:15px;
+        padding: 0px;
+    }
+    .navbar li{
+        display: none;
+    }
+    .navbar li.tab-icon{
+        display: list-item;
+        transition: 1.2s ease;
+    }
 }
